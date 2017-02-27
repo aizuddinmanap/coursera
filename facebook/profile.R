@@ -7,3 +7,9 @@ url <- paste0("https://graph.facebook.com/me?fields=id,name&access_token=", toke
 profile <- fromJSON(txt=url)
 
 View(profile)
+
+url <- paste0("https://graph.facebook.com/me/likes?access_token=", token)
+
+likes <- fromJSON(txt=url)
+
+View(likes)
