@@ -1,5 +1,5 @@
+destfile = "./files/bptms.csv" 
 fileURL <- "http://data.stats.gov.my/download_bptms.php?cat=1&id=34"
-
 
 if (! dir.exists("files")) {
   dir.create("files")
