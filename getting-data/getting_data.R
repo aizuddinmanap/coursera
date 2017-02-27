@@ -1,4 +1,8 @@
-destfile = "./files/bptms.csv" 
+folderName = "files"
+fileName = "bptms.csv"
+
+destfile = paste0("./", folderName, "/", fileName)
+
 fileURL <- "http://data.stats.gov.my/download_bptms.php?cat=1&id=34"
 
 if (! dir.exists("files")) {
